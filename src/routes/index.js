@@ -3,12 +3,8 @@ const Express = require('express');
 const router = Express.Router();
 
 // Import other routers
-const usersRouter = require('./users');
+const playersRouter = require('./players');
 
-router.get('/', (req, res) => {
-  res.send('GET /');
-});
-
-router.use('/users', usersRouter);
+router.use('/players', playersRouter);
 
 module.exports = router;
