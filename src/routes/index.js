@@ -6,7 +6,7 @@ const router = Express.Router();
 const usersRouter = require('./users');
 
 router.get('/', (req, res) => {
-    res.send('GET /');
+  res.send('GET /');
 });
 
 router.use('/users', usersRouter);

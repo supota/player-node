@@ -1,11 +1,11 @@
 // Import util libraries
-const Express = require('express'),
-      logger = require('morgan'),
-      cookieParser = require('cookie-parser'),
-      bodyParser = require('body-parser'),
-      cors = require('cors'),
-      helmet = require('helmet'),
-      path = require('path');
+const Express = require('express');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const helmet = require('helmet');
+const path = require('path');
 
 // Create app
 const app = Express();
