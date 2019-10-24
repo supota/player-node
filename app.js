@@ -7,7 +7,11 @@ const Express = require('express'),
       helmet = require('helmet'),
       path = require('path');
 
+// Create app
 const app = Express();
+
+// Import routes
+const routes = require('./src/routes');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -16,5 +20,6 @@ app.use(cookieParser());
 app.use(cors());
 app.use(helmet());
 app.use(Express.static(path.join(__dirname, 'public')));
+app.use('/', routes);
 
 module.exports = app;
